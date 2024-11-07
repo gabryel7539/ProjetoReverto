@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Reverto</title>
+    <link rel="stylesheet" href="style-pagamento.css">
+    <!-- Aqui você pode adicionar fontes externas como Google Fonts -->
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="Imagem do WhatsApp de 2024-10-20 à(s) 16.45.02_9d1424ad.jpg" alt="Logo Reverto" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="payment-container">
+        <h1>Pagamento</h1>
+
+        <section class="payment-summary">
+            <h2>Resumo da Compra</h2>
+            <ul>
+                <li>Produto 1: Camiseta Orgânica - R$ 89,90</li>
+                <li>Produto 2: Calça Reciclada - R$ 129,90</li>
+                <li><strong>Total: R$ 219,80</strong></li>
+            </ul>
+        </section>
+
+        <section class="payment-method">
+            <h2>Escolha o Método de Pagamento</h2>
+            <form action="/processar-pagamento" method="POST">
+                <label for="cartao">Número do Cartão</label>
+                <input type="text" id="cartao" name="cartao" required placeholder="Digite o número do cartão">
+
+                <label for="nome">Nome no Cartão</label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome do titular">
+
+                <label for="validade">Validade</label>
+                <input type="text" id="validade" name="validade" required placeholder="MM/AA">
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required placeholder="Código de segurança">
+
+                <button type="submit" class="btn-pagar">Pagar Agora</button>
+            </form>
+        </section>
+
+        <div class="eco-message">
+            <p><strong>Reverto</strong> é uma marca 100% sustentável. Acreditamos em um futuro melhor para o planeta e por isso usamos materiais orgânicos, reciclados e processos de produção eco-friendly. Obrigado por fazer parte dessa mudança!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Reverto - Moda Sustentável | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
