@@ -96,3 +96,14 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+/* Centralizando o container da logo */
+.logo-container {
+    text-align: center; /* Centraliza a imagem */
+    margin-top: 50px; /* Adiciona um espaçamento do topo */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto; /* Garante que a logo mantenha a proporção */
+    width: 200px; /* Defina o tamanho desejado para a logo */
+}
