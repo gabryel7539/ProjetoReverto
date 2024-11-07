@@ -1,0 +1,155 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e fonte */
+body {
+    background-color: #f3ead9;  /* Fundo bege suave */
+    font-family: 'Arial', sans-serif;
+    color: #303030;  /* Cor do texto principal em preto */
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #4b503a;  /* Verde escuro */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f3ead9;  /* Texto em bege */
+}
+
+.header .logo-container img {
+    width: 120px; /* Ajuste do tamanho do logo */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #f3ead9;  /* Texto em bege */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #868a74;  /* Verde claro para o hover */
+}
+
+/* Container de pagamento */
+.payment-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;  /* Fundo branco */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #c6ccd2;  /* Borda prateada para suavizar */
+}
+
+.payment-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4b503a;  /* Verde escuro para o título */
+}
+
+.payment-summary {
+    background-color: #f3ead9;  /* Fundo bege suave */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid #9a876f;  /* Borda marrom para destacar a seção */
+}
+
+.payment-summary h2 {
+    color: #4b503a;  /* Verde escuro para os subtítulos */
+    margin-bottom: 15px;
+}
+
+.payment-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-summary li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #303030;  /* Texto em preto */
+}
+
+.payment-method {
+    margin-top: 20px;
+}
+
+.payment-method h2 {
+    color: #4b503a;  /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+.payment-method label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #303030;  /* Texto em preto */
+}
+
+.payment-method input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #9a876f;  /* Borda marrom para os inputs */
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.payment-method input:focus {
+    border-color: #4b503a;  /* Verde escuro no foco */
+    outline: none;
+}
+
+.btn-pagar {
+    background-color: #4b503a;  /* Verde escuro */
+    color: white;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-pagar:hover {
+    background-color: #868a74;  /* Verde claro no hover */
+}
+
+/* Mensagem Eco */
+.eco-message {
+    background-color: #c6ccd2;  /* Prateado para destacar a mensagem */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
+    color: #303030;  /* Texto em preto */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #303030;  /* Preto para o rodapé */
+    color: #f3ead9;  /* Texto em bege */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
